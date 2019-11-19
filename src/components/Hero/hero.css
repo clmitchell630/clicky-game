@@ -1,0 +1,14 @@
+.jumbo-jumbotron-bg {
+    background-image: url("../utils/img/congruent_pentagon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #7fb8db;;
+}
+.jumbo-jumbotron {
+    height: 20em;
+    text-align: center;
+    color: #343a40;
+    font-family: 'Kanit', sans-serif;
+}
