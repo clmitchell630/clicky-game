@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="col-12">
                 <div className="row">
                     <div className="col-md-4">
-                        <h2 className="navi-1">Clicker</h2>
+                        <h2 className="navi-1">Rorschach Clicker</h2>
                     </div>
                     <div className="col-md-4">
                     </div>
