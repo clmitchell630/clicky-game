@@ -1,5 +1,6 @@
 img {
     width: 200px;
+    height: 200px;
 }
 .card {
     margin: 1em;
@@ -13,5 +14,5 @@ img {
 }
 .card:active  {
     opacity: .75;
-    box-shadow: 4px 4px 5px rgb(32, 32, 32);
+    box-shadow: 6px 6px 5px rgb(32, 32, 32);
 }

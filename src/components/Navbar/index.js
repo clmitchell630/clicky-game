@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.css";
-import { tsPropertySignature } from "@babel/types";
 
 
 const Navbar = props => {
