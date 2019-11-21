@@ -12,11 +12,12 @@ class App extends Component {
   state = {
     pictures: pictures,
     score: 0,
-    topScore: 0
+    topScore: 0,
+    message: "",
+    tracker: []
   };
 
-  shuffle = event => {
-    event.preventDefault();
+  shuffle = () => {
     let pictures = this.state.pictures;
     let index = pictures.length;
     let value;
@@ -28,19 +29,36 @@ class App extends Component {
       pictures[index] = pictures[rIndex];
       pictures[rIndex] = value;
     }
-
     this.setState({ pictures: pictures });
+  };
 
-  }
-
-  scoreKeeper = function (event) {
-
-  }
+  scoreKeeper = (id) => {
+    // console.log(this.state.tracker);
+    if (this.state.tracker.includes(id)) {
+      this.setState({
+        score: 0,
+        message: "You guessed Incorrectly!",
+        tracker: []
+      });
+      // console.log("wrong!");
+    } else {
+      let value = this.state.tracker;
+      let topScore = this.state.topScore > this.state.score ? this.state.topScore : this.state.topScore + 1;
+      value.push(id);
+      this.setState({
+        score: this.state.score + 1,
+        topScore: topScore,
+        message: "You guessed correctly!",
+        tracker: value
+      });
+    }
+  };
 
   render() {
     return (
       <div>
-        <Navbar 
+        <Navbar
+          message={this.state.message}
           score={this.state.score}
           topScore={this.state.topScore}
         />
@@ -53,12 +71,13 @@ class App extends Component {
               name={image.name}
               image={image.image}
               shuffle={this.shuffle}
+              scoreKeeper={this.scoreKeeper}
             />
           ))}
         </Wrapper>
       </div>
     );
   }
-}
+};
 
 export default App;

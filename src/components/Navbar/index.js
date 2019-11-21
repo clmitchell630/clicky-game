@@ -11,6 +11,7 @@ const Navbar = props => {
                         <h2 className="navi-1">Rorschach Clicker</h2>
                     </div>
                     <div className="col-md-4">
+                        <h2 className={props.message === "You guessed correctly!" ? "navi-2 guess-success" : "navi-2 guess-fail"}>{props.message}</h2>
                     </div>
                     <div className="col-md-4">
                         <h2 className="navi-3">Score: {props.score} | Top Score: {props.topScore}</h2>

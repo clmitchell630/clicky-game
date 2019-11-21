@@ -9,6 +9,19 @@ h2 {
     text-align: center;
 }
 
+.navi-2 {
+    font-size: 1em;
+    padding-top: 2em;
+}
+
 .navi-3 {
     text-align: right;
+}
+
+.guess-success {
+    color: rgb(0, 153, 255);
+}
+
+.guess-fail {
+    color: rgb(255, 0, 0);
 }
