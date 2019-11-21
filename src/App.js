@@ -4,7 +4,6 @@ import pictures from "./pictures.json"
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ICard from "./components/iCard";
-import Trunks from "./components/Trunks";
 import Wrapper from "./components/Wrapper";
 
 class App extends Component {
