@@ -1,4 +1,4 @@
-# clicky-game
+# Rorschach Clicker
 
 A memory game made with React where you try to click all the images and gain points! If you click the same image twice, you lose... made especially difficult because the images are Rorschach inkblots!
 
